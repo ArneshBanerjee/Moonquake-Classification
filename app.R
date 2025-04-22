@@ -196,7 +196,7 @@ server <- function(input, output, session) {
   # Function to read raw data
   read_raw_data <- function(file_name) {
     # Construct the CSV file path in the correct directory
-    file_path <- file.path("/Users/arnesh/Developer/R-Moonquake/space_apps_2024_seismic_detection/data/lunar/training/data/S12_GradeA", 
+    file_path <- file.path("space_apps_2024_seismic_detection/data/lunar/training/data/S12_GradeA", 
                           paste0(file_name, ".csv"))
     if (!file.exists(file_path)) {
       warning(paste("File not found:", file_path))
